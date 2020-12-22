@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/all.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -10,19 +11,22 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Modest</title>
 </head>
-<body>
-    <header class="header">
-        <div class="header-wrap">
-            <div class="container">
+<body id="home">
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-2 center-vertical hide-xs">
                 <div class="logo">
                     <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
-    
+            </div>
+            <div class="col-xs-12 col-md-8 center">
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a href="">home</a></li>
+                        <li class="active"><a href="#home">home</a></li>
                         <li><a href="">about</a></li>
                         <li><a href="">work</a></li>
                         <li><a href="">team</a></li>
@@ -31,33 +35,32 @@
                         <li><a href="">contact</a></li>
                     </ul>
                 </nav>
-    
+            </div>
+            <div class="col-xs-12 col-md-2 hide-xs">
                 <div class="search-area">
                     <input type="text" class="search" placeholder="SEARCH">
                     <button class="search-button"></button>
                 </div>
             </div>
         </div>
+    </div>
+</header>
 
-        <div class="main-header">
-            <div class="slider">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h2>welcome to our marketplace</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ducimus suscipit minima tempore labore voluptatum quidem odit.</p>
-                            <button class="btn">view more</button>
-                            <button class="btn">video tour</button>
-                        </div>
-    
-                        <div class="col-md-5">
-    
-                        </div>
-                    </div>
-                </div>
+<div class="slider center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>welcome to our marketplace</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ducimus suscipit minima tempore labore voluptatum quidem odit.</p>
+                <button class="btn">view more</button>
+                <button class="btn">video tour</button>
+            </div>
+                
+            <div class="col-md-5">
             </div>
         </div>
-    </header>
+    </div>
+</div>
 
 </body>
 </html>
