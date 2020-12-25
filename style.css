@@ -6,11 +6,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+strong {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 .header {
     background-color: #1d2126;
     position: sticky;
     top: 0;
     padding: 25px 0;
+    z-index: 10000;
 }
 
 .container {
@@ -76,7 +86,7 @@ body {
     border-radius: 4px;
 }
 
-.menu >li.active > a {
+.menu > li.active > a {
     border: 2px solid #23b7a4;
     border-radius: 4px;
     color: #23b7a4
@@ -159,6 +169,178 @@ h2 {
     border: 2px solid #23b7a4;
 }
 
+/*MAIN*/
+/*ABOUT*/
+
+.page {
+    padding: 70px 0 90px;
+}
+
+#about {
+    background-color: #fff;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.page-title {
+    padding: 10px 0 55px;
+}
+
+.page-title h2 {
+    font-family: 'Quattrocento Sans', sans-serif;
+    border-left: 10px solid #e1e6ea;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #292f36;
+    padding-left: 15px;
+}
+
+.content {
+    padding: 10px 0;
+}
+
+.content > p {
+    line-height: 25px;
+    color: #8d8f92;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.project-social {
+    display: flex;
+}
+
+.project-social > li {
+    width: 60px;
+    height: 60px;
+    margin-right: 2px;
+}
+
+.project-social > li > a {
+    text-align: center;
+    line-height: 70px;
+    display: block;
+    background-color: #c8cdd0;
+    height: 60px;
+    width: 60px;
+    color: white;
+}
+
+.project-social > li > a:hover {
+    background-color: #d0d5d9;
+}
+
+.goal {
+    display: flex;
+}
+
+.goal-num {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-color: #23b7a4;
+    font-size: 20px;
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 50px;
+    flex: 0 0 50px;
+}
+
+.goal-desc h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #292f36;
+    margin-bottom: 15px;
+}
+
+.goal-desc p {
+    line-height: 25px;
+    color: #8d8f92;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+/*TEAM*/
+
+.team-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.team-worker {
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.team-desc {
+    width: 100%;
+    padding: 15px;
+    background-color: #e1e6ea;
+}
+
+.team-desc h3 {
+    font-size: 16px;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+    color: #5a6066;
+    padding-bottom: 5px;
+}
+
+.team-desc p {
+    color: #a3a6a9;
+}
+
+.team-social {
+    position: absolute;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transition: 0.3s;
+}
+
+.team-social > li {
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+
+.team-social > li > a {
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 60px;
+    background-color: #3a454d;
+    color: white;
+}
+
+.team-social > li > a:hover {
+    background-color: #4e5a62;
+}
+
+.team-worker:hover .team-desc {
+    background-color: #3a454d;
+}
+
+.team-worker:hover .team-desc h3, .team-worker:hover .team-desc p {
+    color: white;
+}
+
+.team-worker:hover .team-social {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    transition: 0.3s;
+}
+
 @media(min-width: 768px) {
     .container {
         max-width: 720px;
@@ -173,6 +355,16 @@ h2 {
     .col-md-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
+    }
+
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
     }
 
     .col-md-7 {
@@ -192,13 +384,33 @@ h2 {
     }
 }
 
-/* MOBILE ONLY */
-@media (max-width: 767px) {
+/* TABLET */
+@media (max-width: 991px) {
+    .center-xs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .hide-xs {
         display: none;
     }
+}
 
+/* MOBILE ONLY */
+@media (max-width: 767px) {
     .nav {
         overflow-x: scroll;
+    }
+
+    .project-social > li {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-social > li > a {
+        height: 50px;
+        width: 50px;
+        line-height: 65px;
     }
 }
