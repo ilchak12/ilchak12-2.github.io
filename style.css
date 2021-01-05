@@ -292,9 +292,24 @@ h2 {
 /*TEAM*/
 
 .team-pic {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.team-pic .fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3a454d;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.team-worker:hover .fill {
+    visibility: visible;
+    opacity: 33%;
 }
 
 .team-pic img,
@@ -419,7 +434,7 @@ h2 {
     opacity: 0;
 }
 
-.fill {
+.work-pic .fill {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -442,9 +457,10 @@ h2 {
 }
 
 .show-more {
+    position: relative;
     margin-top: 40px;
     width: 150px;
-    height: 40px;
+    height: 44px;
     border: 2px solid white;
     color: white;
     font-family: 'Quattrocento Sans', sans-serif;
@@ -455,6 +471,11 @@ h2 {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
+}
+
+.show-more:hover {
+    background-color: #23b7a4;
+    border: 2px solid #23b7a4;
 }
 
 /*SERVICES*/
@@ -534,8 +555,8 @@ h2 {
 
 .social > li {
     height: 30px;
-    width: 30px;
-    margin-left: 5px;
+    width: max-content;
+    margin-left: 20px;
 }
 
 .social > li > a {
@@ -544,6 +565,10 @@ h2 {
     height: 30px;
     line-height: 30px;
     text-align: right;
+}
+
+.social > li > a:hover {
+    color: #d0d5d9;
 }
 
 /*===========================================*/
