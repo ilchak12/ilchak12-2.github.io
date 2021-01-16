@@ -19,24 +19,28 @@
 
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-2 center-vertical center-xs">
+            <div class="row header-row">
+                <div class="col-md-2 col-sm-12 center-vertical center-xs">
                     <div class="logo">
                         <a href=""><img src="img/logo.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-8 center">
-                    <nav class="nav">
-                        <ul class="menu">
-                            <li class="active"><a href="#home">home</a></li>
-                            <li><a href="#about">about</a></li>
-                            <li><a href="#team">team</a></li>
-                            <li><a href="#work">work</a></li>
-                            <li><a href="#services">services</a></li>
-                            <li><a href="#features">features</a></li>
-                            <li><a href="#contact">contact</a></li>
-                        </ul>
-                    </nav>
+                <div class="col-md-8 col-sm-12 center">
+                    <ul class="menu navigation hidden-menu">
+                        <li class="active"><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+
+                    <div class="nav-mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="col-xs-12 col-md-2 hide-xs">
                     <div class="search-area">
@@ -542,6 +546,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="btn-area">
+                            <button class="btn green contact-btn">Contact us!</button>
+                        </div>
+
+                        <div class="contact-form">
+                            <div class="btn-close"><i class="fas fa-window-close"></i></div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="name">your name</label>
+                                    <input type="text" name="name">
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="email">your email</label>
+                                    <input type="email" name="email">
+                                </div>
+    
+                                <label for="message">your message</label>
+                                <textarea name="message" cols="30" rows="10"></textarea>
+    
+                                <button class="btn green-filled">send message</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -574,7 +604,7 @@
     <div class="modal">
         <div class="modal-block">
             <form action="">
-                <div class="btn-close">X</div>
+                <div class="btn-close"><i class="fas fa-window-close"></i></div>
                 <h3>Please call for more details</h3>
                 <div class="form-fields">
                     <input type="text" placeholder="Your name">
